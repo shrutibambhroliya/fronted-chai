@@ -1,0 +1,106 @@
+.bg-1{
+    background: rgb(218,212,212);
+    background: linear-gradient(90deg, rgba(218,212,212,1) 0%, rgba(235,231,231,1) 38%, rgba(255,252,252,1) 100%);
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+   
+    
+}
+
+.awesome {
+      
+    font-family: futura;
+    font-style: italic;
+    width:100%;
+    animation:colorchange 20s infinite alternate;
+    
+    
+  }
+
+  @keyframes  colorchange {
+    0% {
+      
+      color: #cd5d41;
+    }
+    
+    10% {
+      
+      color: #51eb5e;
+    }
+    
+    20% {
+      
+      color: #f92caa;
+    }
+    
+    30% {
+      
+      color: #6655d3;
+    }
+    
+    40% {
+      
+      color: #dc0808;
+    }
+    
+    50% {
+      
+      color: #f1ee2b;
+    }
+    
+    60% {
+      
+      color: #6d1b99;
+    }
+    
+    70% {
+      
+      color: #28fefa;
+    }
+    80% {
+   
+      color: #34ff52;
+    }
+    
+    90% {
+   
+      color: #ff3f82;
+    }
+    
+    100% {
+      
+      color: #418DCD;
+    }
+  }
+
+  .banner-img {
+    position: relative;
+    overflow: hidden; /* Ensure image stays within container */
+   
+}
+
+.banner-img img {
+    width: 100%;
+    height: auto;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+}
+
+.banner-img:hover img {
+    -webkit-transform: scale(1.1); /* Adjust scale to prevent overflow */
+    transform: scale(1.1);
+}
+.active{
+ 
+  color: rgb(217, 6, 6);
+}
+
+
+
