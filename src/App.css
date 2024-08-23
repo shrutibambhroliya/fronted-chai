@@ -5,7 +5,8 @@
 }
 body
  {
-    overflow-x: hidden;
-    background: rgb(218,212,212);
-    background: linear-gradient(90deg, rgba(218,212,212,1) 0%, rgba(235,231,231,1) 38%, rgba(255,252,252,1) 100%);
+       overflow-x: hidden;
+       /* background-color: #f2f2f2; */
+    /* background: rgb(218,212,212); */
+    /* background: linear-gradient(90deg, rgba(218,212,212,1) 0%, rgba(235,231,231,1) 38%, rgba(255,252,252,1) 100%); */
 }

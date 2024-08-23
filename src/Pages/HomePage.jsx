@@ -191,28 +191,28 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="w-[70%] relative mx-auto mt-[70px] ">
-        <div className="text-center">
-          <div>
-            <h2 className="text-[25px] mb-[9.8px]">TOP INTERESTING</h2>
+      <section className="w-[75%] relative mx-auto mt-[70px] ">
+        <div className="">
+          <div className="text-center">
+            <div>
+              <h2 className="text-[25px] mb-[9.8px]">TOP INTERESTING</h2>
+            </div>
+            <div className="mb-[35px]">
+              <p>
+                Browse the collection of our best selling and top interesting
+                products.
+                <br />
+                You’ll definitely find what you are looking for.
+              </p>
+            </div>
           </div>
-          <div className="mb-[35px]">
-            <p>
-              Browse the collection of our best selling and top interesting
-              products.
-              <br />
-              You’ll definitely find what you are looking for.
-            </p>
-          </div>
-        </div>
-        <div className="mb-[21.74px]">
+
           <div className="mb-[30px] ">
             <div className="">
               <Active />
             </div>
           </div>
         </div>
-        <div></div>
       </section>
     </div>
   );

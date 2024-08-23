@@ -97,6 +97,7 @@
     -webkit-transform: scale(1.1); /* Adjust scale to prevent overflow */
     transform: scale(1.1);
 }
+/* active element  */
 .active{
  
   color: rgb(217, 6, 6);
