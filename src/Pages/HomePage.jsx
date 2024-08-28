@@ -5,34 +5,38 @@ import Button from "../Components/Button";
 import images from "../Components/Images";
 import Sliders from "../Components/Sliders";
 import Active from "../Components/Active";
+import Categories from "../Components/All-Products/Categories";
+import Blog from "../Components/All-Products/Blog";
+import PreFooter from "../Components/All-Products/PreFooter";
+import Footer from "../Components/All-Products/Footer";
 
 const HomePage = () => {
   return (
     <div className="relative">
       {/* slider section  */}
+      <Navbar />
       <section className="">
-        <Navbar />
         <div className="">
           <div className="">
             <Sliders>
               {images.map((item, index) => (
                 <div key={index} className="slider__content">
-                  <div className=" w-full grid grid-cols-2 items-center py-[35px] px-[10px] rounded-md bg-[#555554] ease-in duration-300 hover:scale-95">
+                  <div className=" w-full grid grid-cols-2 items-center py-[35px] px-[10px] rounded-md bg-[#555554] ease-in duration-300 hover:scale-95 max-[1152px]:grid-cols-1 gap-4">
                     <div>
                       <img
-                        className="w-full h-auto rounded-lg"
+                        className="w-full h-auto rounded-lg max-[1152px]:max-w-[700px] m-auto"
                         src={item.imgURL}
                         alt={item.imgALT}
                       />
                     </div>
                     <div className="text-center">
-                      <p className="text-[50px] font-serif font-semibold tracking-[5px] ">
+                      <p className="text-[50px] font-serif font-semibold tracking-[5px] max-[1152px]:text-[40px] tracking-[2px]">
                         {item.title}
                       </p>
-                      <p className="text-[#e2e2c0] text-[30px] font-semibold font-sans   tracking-[5px] ">
+                      <p className="text-[#e2e2c0] text-[30px] font-semibold font-sans tracking-[5px] max-[1152px]:text-[25px] tracking-[2px] ">
                         {item.sell}
                       </p>
-                      <p className="awesome text-[45px] font-serif font-semibold tracking-[5px] text-[#7de9ff] pb-5">
+                      <p className="awesome text-[45px] font-serif font-semibold tracking-[5px] text-[#7de9ff] pb-3 max-[1152px]:text-[35px] tracking-[2px]">
                         {item.discount}
                       </p>
                       <Button btnText="Shop Now"></Button>
@@ -46,7 +50,7 @@ const HomePage = () => {
       </section>
 
       {/* grid section */}
-      <section className="grid grid-cols-4 mb-5">
+      <section className="grid grid-cols-4 mb-5 max-[1313px]:grid-cols-2">
         <div className="banner-img bg-[#ecc923] transition-[0.3s] hover:bg-[#ccad12]">
           <img
             className="opacity-[0.4] max-w-[100%]"
@@ -132,15 +136,15 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* 123 */}
-      <section className="relative mb-[15px]">
-        <div className="grid grid-cols-3 gap-5 divide-x divide-[#c2bebe] w-[70%] m-auto">
-          <div>
+      {/* payment process*/}
+      <section className="relative w-[70%] m-auto mb-[15px]">
+        <div className="grid grid-cols-3 gap-5 divide-x divide-[#c2bebe] max-[1281px]:grid-cols-1 divide-x-0 ">
+          <div className="">
             <div className=" text-center">
               <h2 className="text-[4rem] font-sans font-bold text-[#e74948]">
                 01.
               </h2>
-              <h4 className="text-[1.25rem] text-black font-sans font-bold">
+              <h4 className="text-[1.25rem] text-black font-sans font-bold ">
                 MAKE YOUR ORDER
               </h4>
             </div>
@@ -148,7 +152,7 @@ const HomePage = () => {
               Browse the products from your favorite category, add to your
               basket and make an order in a few clicks.
             </p>
-            <div className="text-center text-[.75rem] py-[7px] bg-black mx-[110px] rounded-sm transition-[0.3s] hover:opacity-[0.7]">
+            <div className="text-center text-[.75rem] py-[7px] bg-black mx-[110px] rounded-sm transition-[0.3s] hover:opacity-[0.7] ">
               <button className="text-white">READ MORE</button>
             </div>
           </div>
@@ -191,6 +195,7 @@ const HomePage = () => {
         </div>
       </section>
 
+      {/* All-produst:featured,new-arrivals,special */}
       <section className="w-[75%] relative mx-auto mt-[70px] ">
         <div className="">
           <div className="text-center">
@@ -213,6 +218,56 @@ const HomePage = () => {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* product categories */}
+      <section className="w-[75%] relative mx-auto mt-[70px]">
+        <div>
+          <h1 className="text-[25px] font-normal mb-[11.2px] tracking-[1px] text-center font-sans">
+            PRODUCT CATEGORIES
+          </h1>
+          <div className="mb-[35px]">
+            <p className="text-center max-w-full text-gray-600">
+              Variety of product categories, tens of products, only five-stars
+              reviews.
+              <br />
+              Browse the collections right now.
+            </p>
+          </div>
+        </div>
+        <div>
+          <Categories />
+        </div>
+      </section>
+
+      {/* blog  */}
+      <section className="w-[75%] relative mx-auto mt-[70px] mb-[15px]">
+        <div>
+          <div className="text-center">
+            <h2 className="text-[25px] tracking-[1px] mb-[11.2px]">
+              LATEST FROM OUR BLOG
+            </h2>
+            <p className="text-gray-600 mb-[30px]">
+              Do you want to present posts in the best way to highlight
+              interestingmoments of your blog?
+              <br />
+              Focus on the latest news!
+            </p>
+          </div>
+          <div>
+            <Blog />
+          </div>
+        </div>
+      </section>
+
+      {/* pre-footer  */}
+      <section className="w-[75%] relative mx-auto mt-[70px] mb-[15px]">
+        <PreFooter />
+      </section>
+
+      {/* Footer  */}
+      <section className="w-full relative  mt-[70px]  bg-slate-950">
+        <Footer />
       </section>
     </div>
   );

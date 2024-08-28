@@ -7,11 +7,11 @@
     font-family: 'Matemasie', sans-serif;
 }
 
-li{
+.words li{
   position: relative;
     list-style: none;
 }
-li::after{
+.words li::after{
   content: "";
   position: absolute;
   background-color: #9e9ea7;
@@ -21,7 +21,7 @@ li::after{
   bottom: -5px;
   transition: 0.2s;
 }
-li:hover::after{
+.words li:hover::after{
   width: 100%;
 }
 .words li{
