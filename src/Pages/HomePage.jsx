@@ -1,20 +1,18 @@
 import React from "react";
 import "./HomePage.css";
-import Navbar from "../Components/Navbar";
-import Button from "../Components/Button";
-import images from "../Components/Images";
-import Sliders from "../Components/Sliders";
-import Active from "../Components/Active";
-import Categories from "../Components/All-Products/Categories";
-import Blog from "../Components/All-Products/Blog";
-import PreFooter from "../Components/All-Products/PreFooter";
-import Footer from "../Components/All-Products/Footer";
+import Navbar from "../Components/Common/Navbar";
+import Button from "../Components/Common/Button";
+import images from "../Components/Common/Images";
+import Sliders from "../Components/Common/Sliders";
+import Active from "../Components/Common/Active";
+import Categories from "../Components/All/Categories";
+import Blog from "../Components/All/Blog";
+import PreFooter from "../Components/All/PreFooter";
 
 const HomePage = () => {
   return (
     <div className="relative">
       {/* slider section  */}
-      <Navbar />
       <section className="">
         <div className="">
           <div className="">
@@ -30,7 +28,7 @@ const HomePage = () => {
                       />
                     </div>
                     <div className="text-center">
-                      <p className="text-[50px] font-serif font-semibold tracking-[5px] max-[1152px]:text-[40px] tracking-[2px]">
+                      <p className="text-[50px] font-serif font-semibold tracking-[5px] max-[1152px]:text-[40px] tracking-[2px] max-[915px]:text-[30px] tracking-normal">
                         {item.title}
                       </p>
                       <p className="text-[#e2e2c0] text-[30px] font-semibold font-sans tracking-[5px] max-[1152px]:text-[25px] tracking-[2px] ">
@@ -263,11 +261,6 @@ const HomePage = () => {
       {/* pre-footer  */}
       <section className="w-[75%] relative mx-auto mt-[70px] mb-[15px]">
         <PreFooter />
-      </section>
-
-      {/* Footer  */}
-      <section className="w-full relative  mt-[70px]  bg-slate-950">
-        <Footer />
       </section>
     </div>
   );

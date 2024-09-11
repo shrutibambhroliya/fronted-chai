@@ -1,6 +1,6 @@
 import React from "react";
-import useTheme from "../Context/Theme";
-const SignupPage = () => {
+import useTheme from "../../Context/Theme";
+const Login = () => {
   const { themeMode, darkMode, lightMode } = useTheme();
 
   const toggleChange = (e) => {
@@ -12,14 +12,14 @@ const SignupPage = () => {
     }
   };
   return (
-    <div>
+    <>
       <div className="back-ground h-screen w-full">
         <div className=" flex  flex-col min-h-screen items-center justify-center">
           <div className="w-full ">
             <div className="dark:bg-gray-950 dark:border-gray-700 bg-slate-100 max-w-md mx-auto  rounded-lg shadow py-5">
               <div className="w-full max-w-sm mx-auto flex justify-between items-center">
                 <h2 className="mb-5 mt-2 text-center text-2xl font-bold leading-9 tracking-tight dark:text-white text-gray-900">
-                  logIn your account
+                  Create your account
                 </h2>
                 <div>
                   <label className="relative inline-flex items-center cursor-pointer">
@@ -91,28 +91,32 @@ const SignupPage = () => {
                     </div>
                   </div>
 
-                  <div className="flex justify-evenly">
+                  <div>
                     <button
                       type="submit"
-                      className="flex justify-center rounded-md bg-indigo-600 px-9 py-1.5 text-base font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                      className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-base font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                     >
-                      LogIn
-                    </button>
-                    <button
-                      type="submit"
-                      className="flex  justify-center rounded-md bg-indigo-600 px-9 py-1.5 text-base font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                    >
-                      Register
+                      Create account
                     </button>
                   </div>
                 </form>
+
+                <p className="mt-10 text-center text-sm text-gray-500">
+                  already have an account?{" "}
+                  <a
+                    href="#"
+                    className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"
+                  >
+                    logIn
+                  </a>
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
-export default SignupPage;
+export default Login;

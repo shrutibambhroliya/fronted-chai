@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import Product from "./All-Products/Product";
-import Featured from "./All-Products/Featured";
-import Special from "./All-Products/Special";
+import Product from "../All/Product";
+import Featured from "../All/Featured";
+import Special from "../All/Special";
 
 const NewArrivalsContent = () => {
   return (
