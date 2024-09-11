@@ -5,7 +5,7 @@ import HomePage from "./Pages/HomePage";
 import Navbar from "./Components/Common/Navbar";
 import Footer from "./Components/All/Footer";
 import ShopPage from "./Pages/ShopPage";
-import Login from "./Components/User/Login";
+
 import "./App.css";
 const App = () => {
   const [themeMode, setThemeMode] = useState("light");
@@ -29,7 +29,6 @@ const App = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/Shop" element={<ShopPage />} />
-          <Route path="/Login" element={<Login />} />
         </Routes>
         <Footer />
       </Router>
