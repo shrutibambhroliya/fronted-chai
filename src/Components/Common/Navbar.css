@@ -61,17 +61,6 @@ nav{
     transition: 0.3s ease;
   }
   
-  .input::placeholder {
-    color: #9e9ea7;
-  }
-  
-  .input:focus,
-  input:hover {
-    outline: none;
-    border-color: rgba(0, 48, 73, 0.4);
-    background-color: #fff;
-    box-shadow: 0 0 0 4px rgb(0 48 73 / 10%);
-  }
   
   .icon {
     position: absolute;
@@ -89,7 +78,7 @@ nav{
   align-items: flex-start;
   position: fixed;
   z-index: 999;
-  top: 60px;
+  top: 0;
   right: 0px;
   width: 300px;
   height: 100vh;
@@ -113,48 +102,3 @@ nav{
 }
 
 
-
-/* Login Sidebar CSS */
-.login-sidebar {
-  position: fixed;
-  top: 0;
-  right: -100%;
-  width: 500px;
-  height: 100%;
-  background-color: #f4f4f4;
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
-  transition: right 0.3s ease-in-out;
-  z-index: 1500;
-}
-
-.login-sidebar.active {
-  right: 0;
-  color: #000;
-}
-
-.login-content {
-  padding: 20px;
-  margin-top: 10px;
-}
-
-.login-content h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.login-content input {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-
-
-
-.back-ground{
-  background: rgb(0,0,0);
-  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(38,38,38,1) 35%, rgba(88,93,94,1) 100%);
-  
-}
